@@ -1,5 +1,7 @@
 import streamlit as st
-         
+
+#streamlit navigation bar
+#https://docs.streamlit.io/develop/api-reference/navigation/st.navigation
 pages = {
     "Dashboard":[
         st.Page("dashboard.py",title="Dashboard"),
@@ -23,3 +25,4 @@ pg.run()
          
 
     
+
