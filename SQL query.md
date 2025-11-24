@@ -23,7 +23,7 @@ CREATE TABLE [Location] (
     [loc_type] VARCHAR(50),
     [loc_contact_person] VARCHAR(100),
     
-    -- Phone is best stored as VARCHAR to handle dashes or leading zeros
+    -- Change to VARCHAR
     [loc_contact_phone] VARCHAR(50)
 );
 
@@ -35,7 +35,7 @@ CREATE TABLE [Person] (
     -- Personal details
     [first_name] VARCHAR(100),
     [mid_name] VARCHAR(100),
-    [last_name] VARCHAR(100), -- Corrected from 'Isat name'
+    [last_name] VARCHAR(100), 
     [gender] VARCHAR(20),
     [age] INT,
     
@@ -59,7 +59,7 @@ CREATE TABLE [Event] (
     [evn_start_date] DATETIME,
     [evn_end_date] DATETIME,
     [evn_organizer] VARCHAR(100),
-    [evn_description] VARCHAR(MAX), -- VARCHAR(MAX) is preferred over TEXT in MSSQL 2012+
+    [evn_description] VARCHAR(MAX), 
     [evn_type] VARCHAR(50),
     
     -- Define Foreign Key Constraint
