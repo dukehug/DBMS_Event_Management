@@ -3,8 +3,13 @@ import pandas as pd
 import pyodbc
 from utils import run_query, execute_adddata
 
-st.set_page_config(layout="wide")
-st.title("Hello, there!")
+#page config: https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
+st.set_page_config(page_title="Add Location",
+                    layout="wide",
+                
+                )
+
+st.title("Add Location")
 st.write("Welcome to Event add_location.py")
 st.divider()
 

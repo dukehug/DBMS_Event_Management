@@ -2,8 +2,11 @@ import streamlit as st
 import datetime
 from utils import run_query,execute_adddata
 
+#page config: https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
+st.set_page_config(page_title="Add new event",
+                    layout="wide",
+                )
 
-st.set_page_config(layout="wide")
 st.title("Add new Event")
 st.write("Check all infomation are correct")
 st.divider()

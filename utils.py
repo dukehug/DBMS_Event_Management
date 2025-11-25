@@ -27,13 +27,13 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
          
-#write data         
-def execute_adddata(query,params):
+#update data /  use different query syntax , you can insert,update,delete   
+def execute_update(query,params):
     conn = init_connection()
     try:
         with conn.cursor() as cur:
-            cur.execute(query,params)
-            conn.commit()
+            cur.execute(query,params) #query syntax and params
+            conn.commit() #submit
             return True
     except Exception as e:
         st.error(f"Database Error: {e}")

@@ -3,11 +3,14 @@ from utils import run_query
 
 
 
-        
-st.set_page_config(layout="wide")
+#page config: https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
+st.set_page_config(page_title="Event Management Systemt",
+                    layout="wide",
+                )
+
 st.title("Event management system")
-st.write("Welcome to back Jamila - dashboard.py")
+st.write("Welcome to back  - dashboard.py")
 st.divider()
 
 # dashboard
-st.subheader("Event List")
+st.subheader("Event Summary")

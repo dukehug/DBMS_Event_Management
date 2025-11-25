@@ -7,6 +7,7 @@ from utils import run_query, execute_update
 st.set_page_config(page_title="Event list for Adttendee",
                     layout="wide",
                 )
-st.title("Event manage")
-st.write("Welcome to Event manage event_manage.py  /  event search, display , edit, delete, quick add")
+st.title("Event list for Adttendee")
+st.write("Welcome to Event event_register_list.py")
 st.divider()
+

@@ -1,5 +1,14 @@
 import streamlit as st
-         
+
+
+#page config: https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
+st.set_page_config(page_title="Event management system",
+                    layout="wide",
+                )
+
+
+#streamlit navigation bar
+#https://docs.streamlit.io/develop/api-reference/navigation/st.navigation
 pages = {
     "Dashboard":[
         st.Page("dashboard.py",title="Dashboard"),
@@ -9,8 +18,8 @@ pages = {
         st.Page("add_event.py",title="Event create"),
         st.Page("attendance_record.py",title="Start event"),
         ],
-    "Attendee manage":[
-        st.Page("event_list.py",title="Event List for Attendees"),
+    "Attendee Register manage":[
+        st.Page("event_register_list.py",title="Event List for Attendees"),
         st.Page("add_person.py",title="Add Attendees"),
     ],
     "Location manage":[

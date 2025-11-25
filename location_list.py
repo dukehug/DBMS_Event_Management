@@ -1,10 +1,14 @@
 import streamlit as st
 import pandas as pd
 import pyodbc
-from utils import run_query, execute_adddata
+from utils import run_query, execute_update
 
-st.set_page_config(layout="wide")
-st.title("Hello, there!")
+
+#page config: https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
+st.set_page_config(page_title="Location list",
+                    layout="wide",
+                )
+st.title("Location List")
 st.write("Welcome to Event location_list.py")
 st.divider()
 
@@ -35,7 +39,7 @@ try:
     rows = run_query(fetch_sql)
     
     
-    #dinfe columns header name
+    #defin  columns header name
     columns = ["ID","Name","Type","Capacity","Address","Contact Person","Phone","Status"]
     df = pd.DataFrame.from_records(rows,columns=columns)
     
@@ -119,7 +123,7 @@ try:
                     """
                     params = (new_name, new_type, new_cap, new_status, new_person, new_phone, new_addr, current_id)
                     
-                    if execute_adddata(update_sql,params):
+                    if execute_update(update_sql,params):
                         st.success("Edited!")
                         st.rerun() # refresh 
                 
@@ -133,7 +137,7 @@ try:
                 #check_sql = "SELECT COUNT(*) FROM Event WHERE location_id = ?" #if this location is use on event , can't delete
                 
                 delete_sql = "DELETE FROM Location WHERE location_id = ?"
-                if execute_adddata(delete_sql,(current_id,)):
+                if execute_update(delete_sql,(current_id,)):
                     st.success(f"Location: '{current_name}' Deletion successful")
                     st.rerun()
                     

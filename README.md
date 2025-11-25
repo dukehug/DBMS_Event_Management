@@ -12,11 +12,22 @@ tags: #Python #DBMS #SQL
 - Python + Streamlit + MSSQL
 - Windows server 2012 R2
 
+##### requirement.txt
+
+```
+pyodbc
+streamlit
+pandas
+
+```
+
+
 ####  Directory Structure
 
 ```python
 event_manage/
 ├── .streamlit/secrets.toml
+├── utils.py
 ├── main.py
 ├── dashboard.py
 ├── event_manage.py
@@ -40,4 +51,5 @@ event_manage/
 References: 
 
 https://docs.streamlit.io/develop/quick-reference/cheat-sheet
+
 https://www.itiohub.com/log/using-python-and-streamlit-with-mssql.html
