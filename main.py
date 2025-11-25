@@ -13,7 +13,7 @@ pages = {
     ],
     "Event manage":[
         st.Page("event_manage.py",title="Event manage"),
-        st.Page("add_event.py",title="Event create"),
+        st.Page("add_event.py",title="Add new event"),
         st.Page("attendance_record.py",title="Start event"),
         ],
     "Attendee Register manage":[
