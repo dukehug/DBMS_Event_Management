@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pyodbc
-from utils import run_query, execute_adddata
+from utils import run_query, execute_update
 
 #page config: https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
 st.set_page_config(page_title="Add Location",
@@ -52,7 +52,7 @@ with st.form("add_location_form"):
                 new_localtion_ct_phone
             )
             
-            if execute_adddata(sql_query,params):
+            if execute_update(sql_query,params):
                 st.success(f"Success! Event '{new_localtion_name}' has been added.")
                 #st.rerun()
     
