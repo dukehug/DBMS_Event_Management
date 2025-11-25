@@ -25,8 +25,13 @@ CREATE TABLE [Location] (
     [loc_type] VARCHAR(50),
     [loc_contact_person] VARCHAR(100),
     
+<<<<<<< HEAD
     -- Changed from INT to VARCHAR to handle leading zeros and formatting
     [loc_contact_phone] VARCHAR(50) 
+=======
+    -- Change to VARCHAR
+    [loc_contact_phone] VARCHAR(50)
+>>>>>>> 5f37323087f6b40cdffe5741a9ebaeb13cf52cc5
 );
 
 -- =============================================
@@ -41,7 +46,10 @@ CREATE TABLE [Person] (
     [first_name] VARCHAR(100),
     [mid_name] VARCHAR(100),
     [last_name] VARCHAR(100), 
+<<<<<<< HEAD
     
+=======
+>>>>>>> 5f37323087f6b40cdffe5741a9ebaeb13cf52cc5
     [gender] VARCHAR(20),
     [age] INT,
     [phone] VARCHAR(50),
@@ -65,7 +73,11 @@ CREATE TABLE [Event] (
     [evn_start_date] DATETIME,
     [evn_end_date] DATETIME,
     [evn_organizer] VARCHAR(100),
+<<<<<<< HEAD
     [evn_description] VARCHAR(MAX), -- Using MAX for descriptions
+=======
+    [evn_description] VARCHAR(MAX), 
+>>>>>>> 5f37323087f6b40cdffe5741a9ebaeb13cf52cc5
     [evn_type] VARCHAR(50),
     
     -- Constraint
