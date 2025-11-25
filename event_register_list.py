@@ -4,7 +4,7 @@ import pyodbc
 from utils import run_query, execute_update
 
 #page config: https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
-st.set_page_config(page_title="Event list for Adttendee",
+st.set_page_config(page_title="Event list for Adttendee Register",
                     layout="wide",
                 )
 st.title("Event list for Adttendee")

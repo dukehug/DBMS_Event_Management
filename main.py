@@ -1,15 +1,10 @@
 import streamlit as st
 
-<<<<<<< HEAD
-
 #page config: https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
 st.set_page_config(page_title="Event management system",
                     layout="wide",
                 )
 
-
-=======
->>>>>>> 5f37323087f6b40cdffe5741a9ebaeb13cf52cc5
 #streamlit navigation bar
 #https://docs.streamlit.io/develop/api-reference/navigation/st.navigation
 pages = {

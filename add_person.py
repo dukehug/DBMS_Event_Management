@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pyodbc
-from utils import run_query, execute_adddata
+from utils import run_query, execute_update
 
 #page config: https://docs.streamlit.io/develop/api-reference/configuration/st.set_page_config
 st.set_page_config(page_title="Add new Attendee",
